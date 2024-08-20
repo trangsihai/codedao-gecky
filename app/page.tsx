@@ -39,14 +39,14 @@ export default function Home() {
                       Gecky
                     </div>
                     <div className="flex gap-4 lg:gap-8">
-                      <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
+                      <a href={process.env.NEXT_PUBLIC_X_URL}>
                         <img
                           className="w-[30px] lg:w-auto"
                           src="/new/x-1-icon.png"
                           alt=""
                         />
                       </a>
-                      <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
+                      <a href={process.env.NEXT_PUBLIC_TELE_URL}>
                         <img
                           className="w-[30px] lg:w-auto"
                           src="/new/d-1-icon.png"
@@ -181,14 +181,14 @@ export default function Home() {
             alt=""
           />
           <div className="absolute bottom-[5%] left-[5%] flex gap-8 lg:gap-16">
-            <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
+            <a href={process.env.NEXT_PUBLIC_X_URL}>
               <img
                 className="w-[60px] lg:w-auto"
                 src="/new/x-icon.png"
                 alt=""
               />
             </a>
-            <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
+            <a href={process.env.NEXT_PUBLIC_TELE_URL}>
               <img
                 className="w-[60px] lg:w-auto"
                 src="/new/d-icon.png"
@@ -202,7 +202,7 @@ export default function Home() {
               localFont.className
             )}
           >
-            <a href={process.env.NEXT_PUBLIC_DEXS_URL}>Contact us</a>
+            <a href={process.env.NEXT_PUBLIC_X_URL}>Contact us</a>
           </div>
         </div>
       </div>
