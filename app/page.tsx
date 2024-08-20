@@ -64,12 +64,21 @@ export default function Home() {
                     on Tron
                   </div>
                 </div>
-                <div className="lg:max-w-[400px] flex flex-col gap-4 text-white text-[10px] lg:text-[16px]">
-                  <div>Who is AlonMushk?</div>
+                <div className="lg:max-w-[400px] flex flex-col text-white text-[10px] lg:text-[16px]">
+                  <div>This is Gecky - the Gecko.</div>
                   <div>
-                    Alon Mushk, the ledgend himselph, reddy to take ovur Solana
-                    and mek free spech possibel.
+                    Gecky is a cool guy and has big dream, why not? Big dream
+                    can buy you lambo my friend.
                   </div>
+                </div>
+                <div
+                  className="w-fit flex flex-col justify-center 
+                  items-center bg-[#FF0004] px-4 lg:px-10 py-1 lg:py-2 text-white 
+                  rounded-[27px] border-2 border-solid border-black border-r-[12px]"
+                >
+                  <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
+                    <img className="w-auto" src="/new/devtool.png" alt="" />
+                  </a>
                 </div>
                 <div
                   className="w-fit min-w-[100px] lg:min-w-[400px] flex flex-col justify-center 
