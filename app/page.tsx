@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import { Alfa_Slab_One } from "next/font/google";
+import localFontNext from "next/font/local";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
@@ -7,6 +8,10 @@ const alfaFont = Alfa_Slab_One({
   weight: ["400"],
   subsets: ["latin"],
   variable: "--alfa-slab-one-font",
+});
+
+const localFont = localFontNext({
+  src: "./ED-Piedmont-Regular.woff2",
 });
 
 import heroBg from "./hero.png";
@@ -25,7 +30,12 @@ export default function Home() {
               <div className="flex flex-col gap-4 lg:gap-8 lg:w-auto w-1/2 justify-center items-start">
                 <div className="flex flex-col justify-center items-center text-white">
                   <div className="flex flex-row justify-between items-center gap-10">
-                    <div className="text-center text-[24px] lg:text-[100px] break-words">
+                    <div
+                      className={clsx(
+                        "text-center text-[24px] lg:text-[100px] break-words",
+                        localFont.className
+                      )}
+                    >
                       Gecky
                     </div>
                     <div className="flex gap-4 lg:gap-8">
@@ -45,7 +55,12 @@ export default function Home() {
                       </a>
                     </div>
                   </div>
-                  <div className="text-center text-[24px] lg:text-[100px] break-words">
+                  <div
+                    className={clsx(
+                      "text-center text-[24px] lg:text-[100px] break-words",
+                      localFont.className
+                    )}
+                  >
                     on Tron
                   </div>
                 </div>
@@ -71,22 +86,32 @@ export default function Home() {
             </div>
 
             <div className="mb-[20%] lg:mb-[25%] py-2 lg:py-4 bg-[#FF0004] text-white">
-              <Marquee className="text-[16px] lg:text-[64px]">
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
-                <div className="mr-8">$Gecky</div>
+              <Marquee
+                className={clsx(
+                  "text-[16px] lg:text-[64px]",
+                  localFont.className
+                )}
+              >
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
+                <div className="mr-4 lg:mr-10">$Gecky</div>
               </Marquee>
             </div>
 
             <div className="px-4 lg:px-12 flex justify-between items-start">
               <img className="lg:w-auto w-1/2" src="/new/img-1.png" alt="" />
               <div className="flex flex-col gap-4 lg:gap-8 w-1/2 justify-center items-center">
-                <div className="text-center text-[16px] lg:text-[128px] break-words text-white">
+                <div
+                  className={clsx(
+                    "text-center text-[16px] lg:text-[128px] break-words text-white",
+                    localFont.className
+                  )}
+                >
                   Tokenomic
                 </div>
                 <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
@@ -171,7 +196,12 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className="absolute top-[5%] right-[5%] text-white  text-[48px] lg:text-[128px]">
+          <div
+            className={clsx(
+              "absolute top-[5%] right-[5%] text-white  text-[48px] lg:text-[128px]",
+              localFont.className
+            )}
+          >
             <a href={process.env.NEXT_PUBLIC_DEXS_URL}>Contact us</a>
           </div>
         </div>
