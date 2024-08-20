@@ -27,7 +27,7 @@ export default function Home() {
           <div className="w-full absolute bottom-0">
             <div className="px-4 lg:px-24 flex justify-between items-end gap-4">
               <img className="lg:w-auto w-1/2" src="/new/img-2.png" alt="" />
-              <div className="flex flex-col gap-4 lg:gap-8 lg:w-auto w-1/2 justify-center items-start">
+              <div className="flex flex-col gap-2 lg:gap-8 lg:w-auto w-1/2 justify-center items-start">
                 <div className="flex flex-col justify-center items-center text-white">
                   <div className="flex flex-row justify-between items-center gap-10">
                     <div
@@ -77,7 +77,7 @@ export default function Home() {
                   rounded-[27px] border-2 border-solid border-black border-r-[12px]"
                 >
                   <a href={process.env.NEXT_PUBLIC_DEXS_URL}>
-                    <img className="w-auto" src="/new/devtool.png" alt="" />
+                    <img className="w-[60px] lg:w-auto" src="/new/devtool.png" alt="" />
                   </a>
                 </div>
                 <div
